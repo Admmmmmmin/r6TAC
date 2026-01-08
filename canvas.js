@@ -30,9 +30,9 @@ var x = e.clientX - rect.left;
 var y = e.clientY - rect.top;
 var w = document.getElementById('width').value;
 var color = document.getElementById('color').value;
-var r   = parseInt(color.substring(1,3), 16);
+var r = parseInt(color.substring(1,3), 16);
 var g = parseInt(color.substring(3,5), 16);
-var b  = parseInt(color.substring(5,7), 16);
+var b = parseInt(color.substring(5,7), 16);
 // 描画
 ctx.lineCap = 'round';
 ctx.strokeStyle = 'rgb('+ r + ',' + g + ',' + b + ')';
@@ -51,7 +51,7 @@ before_y = y;
 // クリアボタンクリックした時にアラートを表示
 function delete_canvas(){
 // ret = confirm('描画内容を削除します。');
-ret = confirm('标记内容已清除');
+ret = confirm('要清除标记内容吗？');
 // アラートで「OK」を選んだ時
 if (ret == true){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
