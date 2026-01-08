@@ -50,7 +50,8 @@ before_y = y;
 // クリアボタンクリック時
 // クリアボタンクリックした時にアラートを表示
 function delete_canvas(){
-ret = confirm('描画内容を削除します。');
+// ret = confirm('描画内容を削除します。');
+ret = confirm('标记内容已清除');
 // アラートで「OK」を選んだ時
 if (ret == true){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
